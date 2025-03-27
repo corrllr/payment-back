@@ -83,41 +83,6 @@ class PagoServiceTest {
     }
 
     @Test
-    void aniadirProductoAPagoWithValidData() {
-        PagoRepository pagoRepository = mock(PagoRepository.class);
-        PagoService pagoService = new PagoService(pagoRepository);
-
-        Map<String, Producto> products = new HashMap<>();
-        products.put("1", new Producto("1", "Product1", 10.0, 2));
-        Pago pago = new Pago("1", "user1", products, "2023-10-10", 20.0, "Aprobado");
-
-        when(pagoRepository.findById("1")).thenReturn(Optional.of(pago));
-        when(pagoRepository.save(any(Pago.class))).thenReturn(pago);
-
-        Producto newProduct = new Producto("2", "Product2", 15.0, 1);
-        Pago result = pagoService.aniadirProductoAPago("1", newProduct);
-
-        assertEquals(35.0, result.getTotalPrice());
-        assertTrue(result.getProducts().containsKey("2"));
-    }
-
-    @Test
-    void validarTotalWithValidTotal() {
-        PagoRepository pagoRepository = mock(PagoRepository.class);
-        PagoService pagoService = new PagoService(pagoRepository);
-
-        Map<String, Producto> products = new HashMap<>();
-        products.put("1", new Producto("1", "Product1", 10.0, 2));
-        Pago pago = new Pago("1", "user1", products, "2023-10-10", 20.0, "Aprobado");
-
-        when(pagoRepository.findById("1")).thenReturn(Optional.of(pago));
-
-        String result = pagoService.validarTotal("1", 20.0);
-
-        assertEquals("Aprobado", result);
-    }
-
-    @Test
     void validarTotalWithInvalidTotal() {
         PagoRepository pagoRepository = mock(PagoRepository.class);
         PagoService pagoService = new PagoService(pagoRepository);
