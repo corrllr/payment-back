@@ -139,4 +139,8 @@ Actualmente existe un pipeline que se encarga de desplegar e integrar continuame
 ### Base de datos en Mongo ATlas
 ![image](https://github.com/user-attachments/assets/c946bd4c-0d6d-4ccc-ae8f-3b199b58f557)
 
+### Datos:
+
+Actualmente existe un usuario en la base de datos con el id: 1193204781 con este usted podrá hacer validaciones en consultas, de lo contrario es libre de crear nuevos pagos
+
 
