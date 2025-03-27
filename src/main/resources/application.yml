@@ -1,0 +1,7 @@
+server:
+  address: 0.0.0.0
+  port: 8080
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://mayerli:gsCw9vxZl9VK5bc4@parcial.la1koro.mongodb.net/cvds?retryWrites=true&w=majority&appName=parcial
