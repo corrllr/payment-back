@@ -24,6 +24,8 @@ Este proyecto es una API para gestionar pagos de usuarios utilizando Spring Boot
 
 4. Accede a través de 
 
+
+
 ## Endpoints
 ### Crear un Pago
 
@@ -117,6 +119,12 @@ Este proyecto es una API para gestionar pagos de usuarios utilizando Spring Boot
     "estado": "Aprobado"
   }
   ```
+
+## Version desplegada
+
+Actualmente existe un pipeline que se encarga de desplegar e integrar continuamente para que el proyecto se despliegue en azure. Lo puede probar mediante el siguiente link:
+  "http://cvds-bqh3apgub0bcepey.canadacentral-01.azurewebsites.net/api/v1/pagos"
+
 ### Diagrama de componentes:
 ![Componentes](https://github.com/user-attachments/assets/03bed2a2-2496-4575-9c70-c3ea28aeb6e1)
 
