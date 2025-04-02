@@ -3,6 +3,10 @@
 
 Este proyecto es una API para gestionar pagos de usuarios utilizando Spring Boot y MongoDB. Permite crear pagos, agregar productos a un pago y consultar los pagos de un usuario. La validación de los pagos se realiza mediante la comparación del total proporcionado por el usuario con el total calculado por el sistema.
 
+## Desarrollado por
+
+- Mayerlly Suárez Correa
+
 ## Tecnologías Utilizadas
 
 - **Spring Boot**: Framework para construir aplicaciones Java basadas en Spring.
@@ -11,6 +15,11 @@ Este proyecto es una API para gestionar pagos de usuarios utilizando Spring Boot
 ## Comandos para Inicializar el Proyecto
 
 ### Iniciar el Proyecto
+1. Clonar el repositorio:
+   ```
+   git clone https://github.com/corrllr/payment-back
+   cd payment-back
+   ```
 
 2. Compilar el proyecto
    ```
